@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: left;
+  background-color: #ffcfef;
+  color: #2a3335;
+}
+
+.instructions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: content-box;
+  /* padding-left: 30px; */
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  height: 100vh;
+  margin: 0 auto;
+  /* background-color: red; */
+}
+
+.instructions h1 {
+  font-size: 3rem;
+  /* margin: 35px; */
+  padding-bottom: 80px;
+  margin-right: 30px;
+}
+
+/* .instructions h2 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+} */
+
+ul {
+  list-style-type: none;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.instructions ul li {
+  margin-bottom: 30px;
+}
+
+.instructions ul li span {
+  background-color: #0a97b0;
+  padding: 2px 8px;
+  border-radius: 5px;
+  font-weight: 600;
+  margin: 0 5px;
+}
+
+.game {
+  width: 1000px;
+  height: 760px;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: content-box;
+  border: 5px solid #0a5eb0;
+}
+
+.cell {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.8);
+  border-right: 1px solid rgba(128, 128, 128, 0.8);
+}
+
+/* The Modal (background) */
+.modal {
+  /* display: none; Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.hidden {
+  display: none;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #2a3335;
+  font-size: 1.2rem;
+  background-color: #ffcfef;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 8px;
+  width: 30%; /* Could be more or less, depending on screen size */
+  height: 15.5%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  right: 5%;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btns {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.btns button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #2a3335;
+  width: 80px;
+  height: 35px;
+  border: none;
+  background-color: #0a97b0;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btns button:hover {
+  background-color: #0a5eb0;
+  color: #ffcfef;
+}

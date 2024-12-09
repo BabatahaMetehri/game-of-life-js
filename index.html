@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Conway's Game of Life</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="instructions">
+        <h1>Conway's Game of Life</h1>
+        <!-- <h2>How to Play</h2> -->
+        <ul>
+          <li>
+            <p>Press <span class="key">Space</span> to Start / Pause</p>
+          </li>
+          <li>
+            <p>Press <span class="key">Backspace</span> to Clear the Canvas</p>
+          </li>
+          <li>
+            <p>Press <span class="key">S</span> to Save a Pattern</p>
+          </li>
+          <li>
+            <p>
+              Press <span class="key">Enter</span> to Load the Last Saved
+              Pattern
+            </p>
+          </li>
+          <li>
+            <p>
+              Press <span class="key">&larr;</span>
+              <span class="key">&rarr;</span> to Navigate Through Saved Patterns
+            </p>
+          </li>
+          <li>
+            <p>Press <span class="key">R</span> to Generate a Random Seed</p>
+          </li>
+          <li>
+            <p>Press <span class="key">C</span> to Clear Saved Patterns History</p>
+          </li>
+        </ul>
+      </div>
+      <div class="game"></div>
+    </div>
+
+    <div id="myModal" class="modal hidden">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>This will delete all saved patterns</p>
+        <div class="btns">
+          <button class="accept">Accept</button>
+          <button class="cancel">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
